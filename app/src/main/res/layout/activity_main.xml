@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btngrabar"
+        android:layout_width="353dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Grabar video"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/videoView" />
+
+    <Button
+        android:id="@+id/btnguardar"
+        android:layout_width="353dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="GUARDAR"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btngrabar" />
+
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:layout_marginTop="130dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
